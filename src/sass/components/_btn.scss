@@ -1,0 +1,21 @@
+.btn {
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    &__lite {
+        background-color: var(--text-color-dark-backgroud);
+        color: var(--accent-color);
+        &:hover {
+        background-color: var(--btn-lite-hover-background); 
+        }   
+    }
+    &__dark {
+        background-color: var(--accent-color);
+        color: var(--text-color-dark-backgroud);
+    }
+  }
