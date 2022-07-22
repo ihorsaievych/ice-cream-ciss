@@ -1,0 +1,98 @@
+footer {
+   background-color: #fff5f6;
+}
+
+.footer-up {
+   padding: 80px 0 65px;
+}
+
+.footer-column {
+   margin-bottom: 40px;
+}
+
+.footer-title-small {
+   width: 232px;
+   font-family: 'Titan One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 24px;
+   letter-spacing: 0px;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+
+   color: #FFA5BA;
+
+}
+
+.footer-title-large {
+   width: 200px;
+   font-family: 'Titan One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 36px;
+   letter-spacing: 0px;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+
+   color: #D41443;
+}
+
+.footer-column-list {
+   display: flex;
+   justify-content: right;
+}
+
+.footer-social-link {
+   width: 32px;
+   height: 32px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+
+   background-color: #FEA5BB;
+}
+
+.footer-social-icon__link {
+   width: 20px;
+   height: 20px;
+
+}
+
+.footer-text-column {
+   margin-right: 24px;
+   margin-top: 40px;
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 1.8;
+   text-align: right;
+
+   color: #000000;
+
+}
+
+.text-color {
+   color: #D41443;
+}
+
+.footer-copy {
+   text-align: center;
+   border-top: 1px solid #E1E1E1;
+}
+
+.footer-copyright-text {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.5;
+   max-width: 280px;
+   text-align: center;
+   padding: 16px 20px 3px;
+
+   color: #907E82;
+}
