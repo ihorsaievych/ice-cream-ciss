@@ -13,6 +13,12 @@ ul {
   padding-left: 0;
 }
 
+li {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -31,3 +37,4 @@ img {
   height: auto;
   width: 100%;
 }
+
