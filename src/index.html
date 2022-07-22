@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Icecream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -20,7 +23,7 @@
     Customer Reviews -   @Алексей
     Contacts - @Oleksandr Vasylenko
     Footer - @Егор -->
-    
+
     <!-- Hero header - @Юра Новіков -->
     <include src="./partials/hero-header.html"></include>
     <!-- Products - @Alex Lupeka -->
@@ -29,8 +32,338 @@
     <include src="./partials/about.html"></include>
     <!-- Advantages - @Максим -->
     <include src="./partials/advantages.html"></include>
-    <!-- Gallery - @Dmytro -->
+    <!-- секция Галлерия -->
+    <section class="gallery">
+      <div class="gallery-field"></div>
+      <h2 class="visually-hidden">Gallery</h2>
+      <div class="gallery-container">
+        <div class="first-img img-gallery">
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img1@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img1@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img1@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img1@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img1@1x.jpg 1x,
+                ./images/imgcream/imgmob/img1@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img1.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+        </div>
+        <div class="img-gallery">
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img2@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img2@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img2@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img2@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img2@1x.jpg 1x,
+                ./images/imgcream/imgmob/img2@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img2.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img3@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img3@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img3@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img3@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img3@1x.jpg 1x,
+                ./images/imgcream/imgmob/img3@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img3.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+        </div>
+        <div class="img-gallery">
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img4@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img4@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img4@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img4@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img4@1x.jpg 1x,
+                ./images/imgcream/imgmob/img4@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img4.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img5@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img5@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img5@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img5@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img5@1x.jpg 1x,
+                ./images/imgcream/imgmob/img5@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img5.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+        </div>
+        <div class="fourth-img img-gallery">
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img6@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img6@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img6@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img6@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img6@1x.jpg 1x,
+                ./images/imgcream/imgmob/img6@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img6.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img7@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img7@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img7@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img7@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img7@1x.jpg 1x,
+                ./images/imgcream/imgmob/img7@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img7.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+        </div>
+        <div class="fifth-img img-gallery">
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img8@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img8@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img8@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img8@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img8@1x.jpg 1x,
+                ./images/imgcream/imgmob/img8@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img8.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img9@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img9@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img9@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img9@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img9@1x.jpg 1x,
+                ./images/imgcream/imgmob/img9@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img9.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+        </div>
+        <div class="img-gallery">
+          <picture>
+            <!-- Изображение для десктопа -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/imgcream/imgdesktop/img10@1x.jpg 1x,
+                ./images/imgcream/imgdesktop/img10@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для планшета -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/imgcream/imgtablet/img10@1x.jpg 1x,
+                ./images/imgcream/imgtablet/img10@2x.jpg 2x
+              "
+            />
+            <!-- Изображение для мобильных девайсов -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/imgcream/imgmob/img10@1x.jpg 1x,
+                ./images/imgcream/imgmob/img10@2x.jpg 2x
+              "
+            />
+            <img
+              class="photo"
+              src="./images/imgcream/imgspare/img10.jpg"
+              alt="ice-cream"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
     <include src="./partials/gallery.html"></include>
+
     <!-- Customer Reviews -   @Алексей -->
     <include src="./partials/customer-reviews.html"></include>
     <!-- Contacts - @Oleksandr Vasylenko -->
