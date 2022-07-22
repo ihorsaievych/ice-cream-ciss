@@ -1,0 +1,117 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --main-font: "DM Sans", sans-serif;
+  --accept-font: "Titan One", cursive;
+  --accept-color: #D41443;
+  --light-accept-color: #FFA5BA;
+  --text-color-description: #907E82;
+  --text-color-light-backgroud: #000000;
+  --text-color-dark-backgroud: #ffffff;
+  --btn-lite-hover-background: #ECEBEB;
+  --light-coloured-backgroud: #FFF5F6;
+  --lighter-backgroud: #E5E5E5;
+  --dark-backgroud: #FFB8CA;
+  --darker-backgroud: #FFA5BA;
+  --menu-background: #E17992;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: currentColor;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.btn {
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
+.btn__lite {
+  background-color: var(--text-color-dark-backgroud);
+  color: var(--accent-color);
+}
+.btn__lite:hover {
+  background-color: var(--btn-lite-hover-background);
+}
+.btn__dark {
+  background-color: var(--accent-color);
+  color: var(--text-color-dark-backgroud);
+}/*# sourceMappingURL=index.css.map */
