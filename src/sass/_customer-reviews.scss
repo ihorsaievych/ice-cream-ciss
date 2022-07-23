@@ -1,0 +1,80 @@
+.reviewers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+}
+
+.reviewers__wrap {
+}
+
+.reviewers__thumb {
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+}
+.reviewers__info {
+  margin-top: 32px;
+  min-height: 308px;
+
+  background-color: #fafafa;
+  background-image: url(../images/“.svg);
+
+  background-repeat: no-repeat;
+  background-position: 53px 30px;
+
+  text-align: center;
+  padding: 43px 50px 17px;
+}
+.reviewers__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  color: var(--text-color-light-backgroud);
+}
+.reviewers__text--area {
+  margin: 0 auto;
+  width: 180px;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 29px,
+    #e1e1e1 31px
+  );
+}
+.reviewers__text--wrap {
+  margin: 0 auto;
+  width: 157px;
+}
+
+.reviewers__name {
+  &::before {
+    content: '';
+    margin: 16 auto;
+    background-image: url(../images/dots.svg);
+    display: block;
+    width: 32px;
+    height: 4px;
+  }
+  margin-top: 16px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  text-align: center;
+
+  color: var(--text-color-light-backgroud);
+}
+.reviewers__dots {
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  height: 4px;
+}
+
+.swiper {
+  width: 280px;
+  height: 487px;
+}
