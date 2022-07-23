@@ -61,13 +61,17 @@
   gap: 3px;
   display: flex;
 }
-.photo {
+.img-gallery .photo {
+  width: unset;
+  border-radius: 8px;
+  transition: transform 0.5s cubic-bezier(0.57, 0.21, 0.69, 3.25);
 }
-.img-gallery {
-  flex-direction: column;
-  gap: 3px;
-  display: flex;
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
 .fourth-img {
   position: relative;
   top: 3px;
