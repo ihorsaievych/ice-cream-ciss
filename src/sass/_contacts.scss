@@ -23,3 +23,31 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
+
+.contacts__category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 16px;
+
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  &--cafe {
+    width: 80px;
+    background-color: #f0d1a5;
+  }
+
+  &--foodtruck {
+    width: 130px;
+    background-color: #c2e297;
+  }
+}
