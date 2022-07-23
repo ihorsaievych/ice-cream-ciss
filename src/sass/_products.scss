@@ -1,0 +1,194 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.products__subtitle {
+  margin-bottom: 15px;
+
+  font-family: var(--accept-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+.products__heading {
+  font-family: var(--accept-font);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+.products__list {
+  display: block;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+}
+.products__item {
+  min-height: 489px;
+  padding: 0 39px 0 41px;
+  margin-top: 140px;
+
+  border-radius: 24px;
+}
+.products__item--ice-cream {
+  background-color: #ffb8ca;
+}
+.products__item--ice-coffee {
+  background-color: #f0d1a5;
+}
+.products__item--milkshakes {
+  background-color: #c2e297;
+}
+.products__button {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  border: transparent;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+  }
+}
+.button__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #d41443;
+  transition-property: fill;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .products__button:hover &,
+  .products__button:focus & {
+    fill: #ffffff;
+  }
+}
+
+.products__title {
+  position: relative;
+  padding-top: 160px;
+
+  font-family: var(--accept-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  &::after {
+    content: '';
+    display: block;
+    margin: 32px auto 32px auto;
+    width: 26px;
+    height: 6px;
+    border-bottom: 6px dotted #fff;
+  }
+}
+.products__text {
+  margin-bottom: 32px;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  letter-spacing: 0.04em;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* -- before --*/
+.products__title.products__title--ice-cream::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+
+  background-image: url('/src/images/products/mobile/ice-cream-280m@1x.png');
+  background-size: 280px 280px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .products__title.products__title--ice-cream::before {
+    background-image: url('/src/images/products/mobile/ice-cream-280m@2x.png');
+  }
+}
+
+.products__title.products__title--ice-coffee::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+
+  background-image: url('/src/images/products/mobile/ice-coffee-280m@1x.png');
+  background-size: 280px 280px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .products__title.products__title--ice-coffee::before {
+    background-image: url('/src/images/products/mobile/ice-coffee-280m@2x.png');
+  }
+}
+
+.products__title.products__title--milkshakes::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+
+  background-image: url('/src/images/products/mobile/milkshakes-280m@1x.png');
+  background-size: 280px 280px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .products__title.products__title--milkshakes::before {
+    background-image: url('/src/images/products/mobile/milkshakes-280m@2x.png');
+  }
+}
