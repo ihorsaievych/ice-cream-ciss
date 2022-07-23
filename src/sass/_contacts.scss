@@ -1,0 +1,25 @@
+.contacts {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0,
+    #ffffff 302px,
+    #fff5f6 302px,
+    #fff5f6 100%
+  );
+}
+
+// .contacts__list {
+// }
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__item {
+  padding: 40px 32px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
