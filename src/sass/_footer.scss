@@ -1,5 +1,5 @@
 footer {
-   background-color: #fff5f6;
+   background-color: var(--light-coloured-backgroud);
 }
 
 .footer-up {
@@ -19,9 +19,9 @@ footer {
    line-height: 24px;
    letter-spacing: 0px;
    text-transform: uppercase;
-   margin-bottom: 15px;
+   margin-bottom: 16px;
 
-   color: #FFA5BA;
+   color: var(--light-accept-color);
 
 }
 
@@ -32,16 +32,23 @@ footer {
    font-weight: 400;
    font-size: 36px;
    line-height: 36px;
-   letter-spacing: 0px;
+   letter-spacing: 0.04em;
    text-transform: uppercase;
-   margin-bottom: 15px;
 
-   color: #D41443;
+   color: var(--accept-color);
 }
 
 .footer-column-list {
    display: flex;
    justify-content: right;
+}
+
+.footer-social-item {
+   margin-right: 28px;
+
+   &:last-child {
+      margin: 0;
+   }
 }
 
 .footer-social-link {
@@ -51,8 +58,8 @@ footer {
    justify-content: center;
    align-items: center;
    border-radius: 50%;
-
-   background-color: #FEA5BB;
+   
+   background-color: var(--darker-backgroud);   
 }
 
 .footer-social-icon__link {
@@ -62,7 +69,6 @@ footer {
 }
 
 .footer-text-column {
-   margin-right: 24px;
    margin-top: 40px;
    font-family: 'DM Sans';
    font-style: normal;
@@ -71,12 +77,12 @@ footer {
    line-height: 1.8;
    text-align: right;
 
-   color: #000000;
+   color: var(--text-color-light-backgroud);
 
 }
 
 .text-color {
-   color: #D41443;
+   color:var(--accept-color);
 }
 
 .footer-copy {
@@ -94,5 +100,5 @@ footer {
    text-align: center;
    padding: 16px 20px 3px;
 
-   color: #907E82;
+   color:var(--text-color-description);
 }
