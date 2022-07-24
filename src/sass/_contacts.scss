@@ -8,14 +8,24 @@
   );
 }
 
-.contacts__list {
-  margin-bottom: 32px;
+.contacts__container {
+  @media screen and (min-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .contacts__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
 }
 
 .contacts__item {
@@ -42,20 +52,37 @@
   letter-spacing: 0.04em;
   color: #ffffff;
 
+  @media screen and (min-width: 768px) {
+    height: 28px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
   &--cafe {
     width: 80px;
     background-color: #f0d1a5;
+
+    @media screen and (min-width: 768px) {
+      width: 73px;
+    }
   }
 
   &--foodtruck {
     width: 130px;
     background-color: #c2e297;
+    @media screen and (min-width: 768px) {
+      width: 138px;
+    }
   }
 }
 
 .contacts__point {
   padding-bottom: 24px;
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__city {
@@ -64,6 +91,10 @@
   letter-spacing: 0.04em;
   color: #000000;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .contacts__description {
@@ -71,13 +102,26 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
-  max-width: 179px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 179px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
 }
 
 .contacts__workmode {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__workdays {
@@ -85,6 +129,9 @@
   font-size: 12px;
   line-height: 1.86;
   color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__workhours {
@@ -92,14 +139,24 @@
   font-size: 12px;
   line-height: 1.86;
   color: #ffa5ba;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__weekdays-mode {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 
 .contacts__connections {
   padding-top: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
 }
 
 .contacts__phone,
@@ -108,6 +165,10 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
 }
 
 .contacts__buttons {
@@ -115,6 +176,12 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
 }
 
 .contacts__button-item .btn {
