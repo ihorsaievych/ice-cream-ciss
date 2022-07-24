@@ -117,40 +117,14 @@
   gap: 10px;
 }
 
-.contacts__locations {
+.contacts__button-item .btn {
   width: 162px;
-  height: 44px;
-
-  background: #d41342;
-  border-radius: 22px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  color: #ffffff;
-  border-style: none;
-}
-
-.contacts__franchise {
-  width: 162px;
-  height: 44px;
-
-  background: #ffffff;
-  border-radius: 22px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  color: #d41443;
-  border-style: none;
-}
-
-.contacts__locations-icon {
-  margin-left: 8px;
-  fill: #ffffff;
 }
 
 .contacts__locations-icon-red {
   margin-left: 12px;
-  fill: #d41443;
+}
+
+.contacts__locations-icon {
+  margin-left: 8px;
 }
