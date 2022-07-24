@@ -1,5 +1,9 @@
 .contacts {
-  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
   background: linear-gradient(
     to bottom,
     #ffffff 0,
