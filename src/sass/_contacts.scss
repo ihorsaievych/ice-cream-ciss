@@ -2,8 +2,8 @@
   background: linear-gradient(
     to bottom,
     #ffffff 0,
-    #ffffff 302px,
-    #fff5f6 302px,
+    #ffffff 362px,
+    #fff5f6 362px,
     #fff5f6 100%
   );
 
@@ -11,8 +11,18 @@
     background: linear-gradient(
       to bottom,
       #ffffff 0,
-      #ffffff 298px,
-      #fff5f6 298px,
+      #ffffff 358px,
+      #fff5f6 358px,
+      #fff5f6 100%
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0,
+      #ffffff 160px,
+      #fff5f6 160px,
       #fff5f6 100%
     );
   }
@@ -43,6 +53,9 @@
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  @media screen and (min-width: 1200px) {
+    padding: 40px 40px;
+  }
 }
 
 .contacts__category {
@@ -66,6 +79,7 @@
     height: 28px;
     font-size: 16px;
     border-radius: 6px;
+    margin-bottom: 32px;
   }
 
   &--cafe {
@@ -73,7 +87,8 @@
     background-color: #f0d1a5;
 
     @media screen and (min-width: 768px) {
-      width: 73px;
+      width: 75px;
+      // width perto maket - 73 for tablet, 75 for desktop. decided to follow desktop for both
     }
   }
 
@@ -103,7 +118,10 @@
   margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
   }
 }
 
@@ -120,6 +138,12 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.83;
+    max-width: 250px;
   }
 }
 
@@ -142,6 +166,9 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__workhours {
@@ -151,6 +178,9 @@
   color: #ffa5ba;
   @media screen and (min-width: 768px) {
     font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
   }
 }
 
@@ -177,6 +207,11 @@
   color: #907e82;
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
     line-height: 1.83;
   }
 }
