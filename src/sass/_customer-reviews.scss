@@ -27,6 +27,7 @@
   background-color: #fafafa;
   background-image: url(../images/“.svg);
 
+
   background-repeat: no-repeat;
   background-position: 53px 30px;
 
@@ -40,6 +41,7 @@
   @include tablet {
     max-height: 164px;
   }
+
 }
 .reviewers__text {
   font-style: normal;
@@ -77,6 +79,7 @@
     width: 32px;
     height: 4px;
   }
+
   margin-top: 16px;
 
   font-weight: 500;
@@ -121,4 +124,5 @@
 .swiper-pagination-bullet {
   width: auto;
   background: transparent;
+
 }
