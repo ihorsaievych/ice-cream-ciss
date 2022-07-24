@@ -1,35 +1,98 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+
+
 <section class="reviewers">
   <div class="container">
     <h2 class="reviews__title visually-hidden">Customer Reviews</h2>
-    <div class="reviewers__wrap">
-      <div class="reviewers__info">
-        <p class="reviewers__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviewers__wrap">
+            <div class="reviewers__thumb">
+              <img
+                srcset="
+                  ./images/customer-reviews/reviewer1-min.jpg    1x,
+                  ./images/customer-reviews/reviewer1-2x-min.jpg 2x
+                "
+                src="./images/customer-reviews/reviewer1-min.jpg"
+                alt="reviewer1"
+              />
+            </div>
+            <div class="reviewers__info">
+              <div class="reviewers__text--area">
+                <div class="reviewers__text--wrap">
+                  <p class="reviewers__text">
+                    Nullam viverra consectetuer. Quisque cursus et, porttitor
+                    risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                    congue. Lorem ipsum primis in nibh vel risus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="reviewers__name">Emily, Los Angeles</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviewers__wrap">
+            <div class="reviewers__thumb">
+              <img
+                srcset="
+                  ./images/customer-reviews/reviewer2-min.jpg    1x,
+                  ./images/customer-reviews/reviewer2-2x-min.jpg 2x
+                "
+                src="./images/customer-reviews/reviewer2-min.jpg"
+                alt="reviewer1"
+              />
+            </div>
+            <div class="reviewers__info">
+              <div class="reviewers__text--area">
+                <div class="reviewers__text--wrap">
+                  <p class="reviewers__text">
+                    Nullam viverra consectetuer. Quisque cursus et, porttitor
+                    risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                    congue. Lorem ipsum primis in nibh vel risus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="reviewers__name">Vasya, Kyiv</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviewers__wrap">
+            <div class="reviewers__thumb">
+              <img
+                srcset="
+                  ./images/customer-reviews/reviewer3-min.jpg    1x,
+                  ./images/customer-reviews/reviewer3-2x-min.jpg 2x
+                "
+                src="./images/customer-reviews/reviewer3-min.jpg"
+                alt="reviewer1"
+              />
+            </div>
+            <div class="reviewers__info">
+              <div class="reviewers__text--area">
+                <div class="reviewers__text--wrap">
+                  <p class="reviewers__text">
+                    Nullam viverra consectetuer. Quisque cursus et, porttitor
+                    risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                    congue. Lorem ipsum primis in nibh vel risus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="reviewers__name">Masha, Lviv</p>
+          </div>
+        </div>
       </div>
-      <p class="reviewers__name">Emily, Los Angeles</p>
-    </div>
-    <div class="reviewers__wrap">
-      <div class="reviewers__info">
-        <p class="reviewers__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p>
-      </div>
-      <p class="reviewers__name">Vasya, Kyiv</p>
-    </div>
-    <div class="reviewers__wrap">
-      <div class="reviewers__info">
-        <p class="reviewers__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p>
-      </div>
-      <p class="reviewers__name">Masha, Lviv</p>
+
+      <div class="swiper-pagination"></div>
+
     </div>
   </div>
 </section>
