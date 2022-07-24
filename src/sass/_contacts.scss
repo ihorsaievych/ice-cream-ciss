@@ -8,8 +8,9 @@
   );
 }
 
-// .contacts__list {
-// }
+.contacts__list {
+  margin-bottom: 32px;
+}
 
 .contacts__list {
   display: flex;
@@ -53,7 +54,7 @@
 }
 
 .contacts__point {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -75,6 +76,8 @@
 
 .contacts__workmode {
   padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .contacts__workdays {
@@ -93,4 +96,61 @@
 
 .contacts__weekdays-mode {
   margin-bottom: 8px;
+}
+
+.contacts__connections {
+  padding-top: 24px;
+}
+
+.contacts__phone,
+.contacts__mail {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contacts__buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__locations {
+  width: 162px;
+  height: 44px;
+
+  background: #d41342;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #ffffff;
+  border-style: none;
+}
+
+.contacts__franchise {
+  width: 162px;
+  height: 44px;
+
+  background: #ffffff;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+  border-style: none;
+}
+
+.contacts__locations-icon {
+  margin-left: 8px;
+  fill: #ffffff;
+}
+
+.contacts__locations-icon-red {
+  margin-left: 12px;
+  fill: #d41443;
 }
