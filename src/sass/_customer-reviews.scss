@@ -4,8 +4,15 @@
   @include tablet {
     padding-bottom: 80px;
     & .container {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 74px;
+      padding-right: 74px;
+    }
+  }
+
+  @include desktop {
+    & .container {
+      padding-left: 116px;
+      padding-right: 116px;
     }
   }
 }
@@ -21,8 +28,22 @@
   height: 85px;
 }
 .reviewers__info {
+  // position: relative;
+  // &::before {
+  //   position: absolute;
+  //   top: 30;
+  //   left: 53;
+  //   content: '';
+  //   display: block;
+  //   width: 54px;
+  //   height: 40px;
+  //   background-image: url(../images/“.svg);
+  //   background-repeat: no-repeat;
+  // }
   margin-top: 32px;
-  // min-height: 308px;
+  margin-left: auto;
+  margin-right: auto;
+
 
   background-color: #fafafa;
   background-image: url(../images/“.svg);
@@ -34,10 +55,22 @@
   @media screen and (max-width: 767px) {
     padding: 43px 50px 17px;
   }
-
   @include tablet {
+    width: 620px;
     padding-top: 37px;
     padding-bottom: 44px;
+
+    background-position: 15px 20px;
+  }
+  @include desktop {
+    width: 100%;
+    padding-left: 73px;
+    padding-right: 73px;
+
+    padding-top: 47px;
+    padding-bottom: 39px;
+
+    background-position: 72px 32px;
   }
 }
 .reviewers__text {
@@ -49,28 +82,38 @@
   color: var(--text-color-light-backgroud);
 
   @include tablet {
-    font-size: 14;
+    font-size: 14px;
+    line-height: 2.16;
   }
 
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: -15;
-  //   left: -45;
-
-  //   display: block;
-  //   width: 54px;
-  //   height: 40px;
-  //   background-image: url(../images/“.svg);
-  // }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 .reviewers__text--area {
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (max-width: 767px) {
+    width: 180px;
+  }
+  @include tablet {
+    width: 608px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include desktop {
+    width: 100%;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 
   background-image: repeating-linear-gradient(
     to bottom,
-    transparent 0 29px,
-    #e1e1e1 31px
+    transparent 0 28px,
+    #e1e1e1 30px
   );
 
   @media screen and (max-width: 767px) {
@@ -84,19 +127,6 @@
       transparent 0 33px,
       #e1e1e1 35px
     );
-  }
-}
-.reviewers__text--wrap {
-  margin: 0 auto;
-  width: 157px;
-
-  background-image: url(../images/“.svg);
-
-  background-repeat: no-repeat;
-  background-position: top left;
-
-  @include tablet {
-    width: 514px;
   }
 }
 
@@ -119,6 +149,13 @@
   text-align: center;
 
   color: var(--text-color-light-backgroud);
+
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 20px;
+  }
 }
 .reviewers__dots {
   display: block;
@@ -129,12 +166,20 @@
 
 .swiper {
   min-width: 280px;
-  // height: 487px;
+
   min-height: 550px;
+
+  @include tablet {
+    min-height: 400px;
+  }
+
+  @include desktop {
+    min-height: 400px;
+  }
 }
-// .swiper-pagination {
-//   padding-top: 70px;
-// }
+.swiper-pagination {
+  --swiper-theme-color: var(--accept-color);
+}
 
 // .swiper-pagination-bullet {
 //   width: 20px;
@@ -152,6 +197,13 @@
 // }
 
 .swiper-pagination-bullet {
+  display: inline-block;
   width: auto;
   background: transparent;
+
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: teal;
 }
