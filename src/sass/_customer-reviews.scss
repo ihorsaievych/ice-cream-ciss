@@ -44,6 +44,7 @@
   margin-left: auto;
   margin-right: auto;
 
+
   background-color: #fafafa;
   background-image: url(../images/“.svg);
 
@@ -114,6 +115,19 @@
     transparent 0 28px,
     #e1e1e1 30px
   );
+
+  @media screen and (max-width: 767px) {
+    width: 180px;
+  }
+  @include tablet {
+    width: 608px;
+
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0 33px,
+      #e1e1e1 35px
+    );
+  }
 }
 
 .reviewers__name {

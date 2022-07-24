@@ -10,6 +10,18 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (min-width: 768px) {
+  .gallery-fiеld {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-fiеld {
+    max-width: 1013px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -28,6 +40,18 @@
   align-items: center;
   gap: 3px;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-container {
+    gap: 6px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-container {
+    gap: 8px;
+  }
 }
 
 .container {
@@ -61,6 +85,19 @@
   gap: 3px;
   display: flex;
 }
+
+@media screen and (min-width: 768px) {
+  .img-gallery {
+    gap: 6px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-gallery {
+    gap: 8px;
+  }
+}
+
 .img-gallery .photo {
   width: unset;
   border-radius: 8px;

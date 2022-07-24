@@ -1,23 +1,27 @@
 <section class="contacts section">
   <div class="contacts__container container">
-    <h1 class="visually-hidden">Contacts</h1>
+    <h2 class="visually-hidden">Contacts</h2>
     <!-- title to be hidden -->
     <ul class="contacts__list list">
       <li class="contacts__item">
-        <h2 class="contacts__title">CAFE</h2>
+        <b class="contacts__category contacts__category--cafe">CAFE</b>
         <div class="contacts__point">
-          <h3 class="contacts__city">Chicago</h3>
+          <h2 class="contacts__city">Chicago</h2>
           <p class="contacts__description">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
         </div>
         <div class="contacts__workmode">
-          <p class="contacts__workdays">Monday - Friday</p>
-          <p class="contacts__workhours">06:00 AM - 10:00 PM</p>
-          <p class="contacts__workdays">Saturday - Sunday</p>
-          <p class="contacts__workhours">08:00 AM - 16:00 PM</p>
+          <div class="contacts__weekdays-mode">
+            <p class="contacts__workdays">Monday - Friday</p>
+            <p class="contacts__workhours">06:00 AM - 10:00 PM</p>
+          </div>
+          <div class="contacts__weekends-mode">
+            <p class="contacts__workdays">Saturday - Sunday</p>
+            <p class="contacts__workhours">08:00 AM - 16:00 PM</p>
+          </div>
         </div>
-        <div>
+        <div class="contacts__connections">
           <a href="tel:+610383766284" class="contacts__phone">
             +61(0) 383 766 284</a
           >
@@ -28,20 +32,26 @@
       </li>
 
       <li class="contacts__item">
-        <h2 class="contacts__title">FOOD TRUCK</h2>
+        <b class="contacts__category contacts__category--foodtruck"
+          >FOOD TRUCK</b
+        >
         <div class="contacts__point">
-          <h3 class="contacts__city">Los Angeles</h3>
+          <h2 class="contacts__city">Los Angeles</h2>
           <p class="contacts__description">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
         </div>
         <div class="contacts__workmode">
-          <p class="contacts__workdays">Monday - Friday</p>
-          <p class="contacts__workhours">06:00 AM - 10:00 PM</p>
-          <p class="contacts__workdays">Saturday - Sunday</p>
-          <p class="contacts__workhours">08:00 AM - 16:00 PM</p>
+          <div class="contacts__weekdays-mode">
+            <p class="contacts__workdays">Monday - Friday</p>
+            <p class="contacts__workhours">06:00 AM - 10:00 PM</p>
+          </div>
+          <div class="contacts__weekends-mode">
+            <p class="contacts__workdays">Saturday - Sunday</p>
+            <p class="contacts__workhours">08:00 AM - 16:00 PM</p>
+          </div>
         </div>
-        <div>
+        <div class="contacts__connections">
           <a href="tel:+610383766284" class="contacts__phone">
             +61(0) 383 766 284</a
           >
@@ -52,20 +62,24 @@
       </li>
 
       <li class="contacts__item">
-        <h2 class="contacts__title">CAFE</h2>
+        <b class="contacts__category contacts__category--cafe">CAFE</b>
         <div class="contacts__point">
-          <h3 class="contacts__city">New York</h3>
+          <h2 class="contacts__city">New York</h2>
           <p class="contacts__description">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
         </div>
         <div class="contacts__workmode">
-          <p class="contacts__workdays">Monday - Friday</p>
-          <p class="contacts__workhours">06:00 AM - 10:00 PM</p>
-          <p class="contacts__workdays">Saturday - Sunday</p>
-          <p class="contacts__workhours">08:00 AM - 16:00 PM</p>
+          <div class="contacts__weekdays-mode">
+            <p class="contacts__workdays">Monday - Friday</p>
+            <p class="contacts__workhours">06:00 AM - 10:00 PM</p>
+          </div>
+          <div class="contacts__weekends-mode">
+            <p class="contacts__workdays">Saturday - Sunday</p>
+            <p class="contacts__workhours">08:00 AM - 16:00 PM</p>
+          </div>
         </div>
-        <div>
+        <div class="contacts__connections">
           <a href="tel:+610383766284" class="contacts__phone">
             +61(0) 383 766 284</a
           >
@@ -78,19 +92,25 @@
 
     <ul class="contacts__buttons list">
       <li class="contacts__button-item">
-        <button type="button" class="contacts__locations">
-          Our Locations
-          <!-- <svg class="contacts__locations-icon" width="4.43" height="8">
-          <use href=""></use>
-        </svg> -->
+        <button type="button" class="btn btn__dark">
+          Our Locations<svg
+            class="contacts__locations-icon"
+            width="8"
+            height="10"
+          >
+            <use href="./images/iconlib.svg#icon-angle-bracket"></use>
+          </svg>
         </button>
       </li>
       <li class="contacts__button-item">
-        <button type="button" class="contacts__franchise">
-          Franchise
-          <!-- <svg class="contacts__locations-icon" width="4.13" height="8">
-          <use href=""></use>
-        </svg> -->
+        <button type="button" class="btn btn__lite">
+          Franchise<svg
+            class="contacts__locations-icon-red"
+            width="8"
+            height="10"
+          >
+            <use href="./images/iconlib.svg#icon-angle-bracket-red"></use>
+          </svg>
         </button>
       </li>
     </ul>
