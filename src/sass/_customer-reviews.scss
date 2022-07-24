@@ -25,6 +25,10 @@
   // min-height: 308px;
 
   background-color: #fafafa;
+  background-image: url(../images/“.svg);
+
+  background-repeat: no-repeat;
+  background-position: 53px 30px;
 
   text-align: center;
   @media screen and (max-width: 767px) {
@@ -105,6 +109,7 @@
     width: 32px;
     height: 4px;
   }
+
   margin-top: 16px;
 
   font-weight: 500;
@@ -147,8 +152,6 @@
 // }
 
 .swiper-pagination-bullet {
-  --swiper-theme-color: var(--accept-color);
-}
-.swiper-pagination-bullet-active {
-  background-image: url(../images/Frame-1.svg);
+  width: auto;
+  background: transparent;
 }
