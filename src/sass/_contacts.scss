@@ -6,6 +6,16 @@
     #fff5f6 302px,
     #fff5f6 100%
   );
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0,
+      #ffffff 298px,
+      #fff5f6 298px,
+      #fff5f6 100%
+    );
+  }
 }
 
 .contacts__container {
