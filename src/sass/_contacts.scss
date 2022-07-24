@@ -51,3 +51,46 @@
     background-color: #c2e297;
   }
 }
+
+.contacts__point {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__city {
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.contacts__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  max-width: 179px;
+}
+
+.contacts__workmode {
+  padding-top: 24px;
+}
+
+.contacts__workdays {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #000000;
+}
+
+.contacts__workhours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.contacts__weekdays-mode {
+  margin-bottom: 8px;
+}
