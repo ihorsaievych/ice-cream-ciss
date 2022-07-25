@@ -1,10 +1,26 @@
 .advantages {
     // padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    background: #FFF5F6;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                padding-bottom: 60px;
+            }
 }
 
 .advantages-text {
     padding-bottom: 4px;
+}
+
+
+.advantages-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 
@@ -15,6 +31,15 @@ position: relative;
 
 .advantages-list-item:not(:last-child) {
 padding-bottom: 30px;
+
+
+@media screen and (min-width: 768px) {
+    padding-bottom: 0;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 0;
+        }
 }
 
 
@@ -27,6 +52,16 @@ padding-bottom: 30px;
     height: 50px;
     background-repeat: no-repeat;
     // transform: translate(0%, -100%);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 35px;
+            }
+
+
 }
 
 
@@ -39,6 +74,15 @@ padding-bottom: 30px;
     height: 50px;
     background-repeat: no-repeat;
     // transform: translate(0%, -100%);
+
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 35px;
+            }
 }
 
 
@@ -51,14 +95,15 @@ padding-bottom: 30px;
     height: 50px;
     background-repeat: no-repeat;
     // transform: translate(0%, -100%);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 35px;
+            }
 }
-
-
-
-
-
-
-
 
 
 .advantages-text {
@@ -70,6 +115,14 @@ padding-bottom: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #D41443;
+
+    @media screen and (min-width: 768px) {
+font-size: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+    }
 }
 
 .advantages-items {
@@ -79,4 +132,13 @@ padding-bottom: 30px;
     font-size: 12px;
     line-height: 170%;
     color: #000000;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+            }
+    
 }
