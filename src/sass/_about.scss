@@ -6,23 +6,48 @@
     background-position: center 555px;
     padding-top: 60px;
     padding-bottom: 40px;
-}
+        
+    @include tablet {
+        padding-bottom: 60px;
+        background-image: none
+    }
 
-// .container {
-    
-// }
+    @include desktop {
+        background-image: url(../images/about/mob/about-bg-m1.png);
+        background-position: bottom;
+    }
+}
 
 .about-over-text {
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
+    // line-height: 21px;
     /* identical to box height */
     text-align: center;
     text-transform: uppercase;
     color: #FFA5BA;
     margin-bottom: 15px;
+
+    @include mobile {       
+        font-size: 22px;
+        line-height: 1.16;
+        // line-height: 30px;
+        margin-bottom: 16px;
+    }
+
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @include desktop {        
+        font-size: 30px;
+        line-height: 1.13;       
+        letter-spacing: 0.04em;        
+    }
 }
 
 .about-title {
@@ -36,11 +61,60 @@
     text-transform: uppercase;
     color: #D41443;
     margin-bottom: 32px;
+
+    @include mobile {}
+    
+    @include tablet {
+        font-size: 48px;
+        line-height: 55px; 
+        margin-bottom: 40px;
+    }
+
+    @include desktop {        
+        font-size: 58px;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+        margin-bottom: 60px;
+    }
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
+
+    @include mobile {}
+    
+    @include tablet {
+        flex-direction: row;
+    }
+
+    @include desktop {
+        align-items: center;
+    }
+}
+
+.about-caw {
+    @include tablet {
+        height: 335px;
+        width: auto;
+        margin-right: 32px;
+    }
+    
+    @include desktop {
+        height: 501px;
+        width: auto;
+        margin-right: 99px;
+    }
+}
+
+.about-content-inform {
+    @include tablet {
+        width: 334px;
+    }
+
+    @include desktop {
+        width: 463px;
+    }
 }
 
 .main-text {
@@ -53,6 +127,22 @@
     color: #000000;
     margin-bottom: 24px;
     padding-right: 60px;
+
+    @include mobile {}
+    
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.76;
+        /* or 25px */
+        margin-bottom: 19px;
+        padding-right: 0;
+    }
+
+    @include desktop {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        margin-bottom: 36px;
+    }
 }
 
 .base-text {
@@ -65,12 +155,33 @@
     color: #907E82;
     margin-bottom: 20px;
     padding-right: 60px;
+
+    @include mobile {}
+    
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.76;
+        /* or 25px */    
+        letter-spacing: 0.04em;
+        margin-bottom: 40px;
+        padding-right: 0;
+    }
+
+    @include desktop {
+        line-height: 1.94;
+        /* or 27px */  
+        margin-bottom: 36px;
+    }
 }
 
 .br {
     content: "";
     display: block;
     height: 10px;
+    
+    @include desktop {
+        height: 27px;
+    }
 }
 
 .about-btn {
