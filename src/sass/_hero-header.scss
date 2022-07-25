@@ -1,5 +1,164 @@
 .hero-header {
   background-color: var(--dark-backgroud);
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: var(--darker-backgroud);
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    top: 83px;
+    left: 36px;
+    right: 1px;
+    bottom: 75px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and(min-width: 768px) {
+      width: 335px;
+      height: 333px;
+      top: 43px;
+      left: 248px;
+      right: 185px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 534px;
+      height: 534px;
+      top: 54px;
+      right: 189px;
+      left: 557px;
+      bottom: 77px;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url('../images/hero-header/icecream171.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 171px;
+    height: 410px;
+    bottom: 0;
+    top: 92px;
+    left: 117px;
+    right: 32px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-header/icecream342.png);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/hero-header/icecream143.png');
+      width: 143px;
+      height: 336px;
+      top: 80px;
+      left: 322px;
+      right: 303px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero-header/icecream286.png');
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/hero-header/icecream236.png');
+      width: 236px;
+      height: 557px;
+      top: 108px;
+      left: 676px;
+      right: 368px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero-header/icecream472.png');
+      }
+    }
+  }
+}
+
+.hero-header__slider {
+  &::before {
+    @media screen and(max-width:767px) {
+      display: none;
+    }
+    content: '';
+    background-image: url('../images/hero-header/milk152.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 152px;
+    height: 154px;
+    left: 32px;
+    bottom: 16px;
+    top: 246px;
+    right: 584px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/milk304.png');
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/hero-header/milk213.png');
+      width: 213px;
+      height: 216px;
+      bottom: 60px;
+      top: 388px;
+      left: 56px;
+      right: 1011px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero-header/milk426.png');
+      }
+    }
+  }
+  &::after {
+    @media screen and(max-width:767px) {
+      display: none;
+    }
+    content: '';
+    background-image: url('../images/hero-header/tasty190.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 190px;
+    height: 150px;
+    bottom: 0;
+    top: 265px;
+    right: 32px;
+    left: 546px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/tasty380.png');
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/hero-header/tasty304.png');
+      width: 304px;
+      height: 241px;
+      bottom: 0;
+      top: 423px;
+      right: 56px;
+      left: 920px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero-header/tasty608.png');
+      }
+    }
+  }
 }
 
 .hero-header-main-nav {
@@ -36,6 +195,8 @@
 
 .hero-header-site-nav__list {
   display: none;
+  position: relative;
+  z-index: 2;
   @media screen and(min-width:1200px) {
     display: flex;
   }
@@ -124,6 +285,7 @@
 .hero-header-mobile-menu {
   display: none;
   position: fixed;
+
   top: 0;
   right: 0;
   height: 100vh;
@@ -134,7 +296,7 @@
 
   &.is-open {
     display: block;
-    z-index: 2;
+    z-index: 10;
     @media screen and (max-width: 767px) {
       width: 250px;
     }
@@ -210,10 +372,19 @@
 .hero-container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 155px;
+  @media screen and(min-width:768px) {
+    padding-bottom: 185px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 307px;
+  }
 }
 
 .hero-title__column {
-  margin-top: 194px;
+  position: relative;
+  z-index: 3;
+  margin-top: 136px;
   @media screen and(min-width:768px) {
     margin-top: 20px;
   }
@@ -321,8 +492,8 @@
     line-height: 1.28;
     &--red {
       height: 40px;
-      margin-right: 23px;
-      margin-left: 23px;
+      padding-right: 23px;
+      padding-left: 23px;
       font-size: 14px;
       line-height: 1.28;
     }
@@ -334,6 +505,7 @@
 
   @media screen and(min-width:768px) {
     margin-top: 16px;
+    display: block;
   }
 
   @media screen and(min-width:1200px) {
@@ -342,6 +514,7 @@
 }
 
 .hero__numbers__item {
+  position: relative;
   margin-bottom: 16px;
 
   &:last-child {
@@ -351,4 +524,87 @@
   @media screen and(min-width:1200px) {
     margin-bottom: 15px;
   }
+  &::before {
+    content: '';
+    background-color: #ffff;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+    @media screen and(min-width:1200px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.hero__numbers__text {
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--text-color-dark-backgroud);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  &--cafes {
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--text-color-dark-backgroud);
+    text-align: right;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.28;
+    }
+  }
+  &--red {
+    color: var(--accept-color);
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+  }
+
+  &--foodtruks-red {
+    color: var(--accept-color);
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+  }
+}
+
+.hero-header__details__button {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  bottom: 56px;
+  top: 342px;
+  left: 184px;
+  right: 566px;
+  margin-left: auto;
+  margin-right: auto;
 }
