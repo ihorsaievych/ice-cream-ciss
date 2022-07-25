@@ -1,3 +1,66 @@
+.advantages {
+    // padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.advantages-text {
+    padding-bottom: 4px;
+}
+
+
+
+.advantages-list-item{
+position: relative;
+}
+
+.advantages-list-item:not(:last-child) {
+padding-bottom: 30px;
+}
+
+
+.advantages-milk-icon::before {
+    content:"";
+    // position: absolute;
+    display: block;
+    background-image: url(../images/advantages/milk.png);
+    width: 33px; 
+    height: 50px;
+    background-repeat: no-repeat;
+    // transform: translate(0%, -100%);
+}
+
+
+.advantages-apple-icon::before {
+    content:"";
+    // position: absolute;
+    display: block;
+    background-image: url(../images/advantages/apple.png);
+    width: 50px; 
+    height: 50px;
+    background-repeat: no-repeat;
+    // transform: translate(0%, -100%);
+}
+
+
+.advantages-candy-icon::before {
+    content:"";
+    // position: absolute;
+    display: block;
+    background-image: url(../images/advantages/candy.png);
+    width: 45px; 
+    height: 50px;
+    background-repeat: no-repeat;
+    // transform: translate(0%, -100%);
+}
+
+
+
+
+
+
+
+
+
 .advantages-text {
     font-family: 'Titan One';
     font-style: normal;
