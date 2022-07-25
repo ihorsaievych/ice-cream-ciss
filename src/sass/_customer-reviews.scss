@@ -16,11 +16,6 @@
     }
   }
 }
-.container {
-}
-
-.reviewers__wrap {
-}
 
 .reviewers__thumb {
   margin: 0 auto;
@@ -39,6 +34,7 @@
   background-position: 53px 30px;
 
   text-align: center;
+
   @media screen and (max-width: 767px) {
     padding: 43px 50px 17px;
   }
@@ -61,11 +57,8 @@
   }
 }
 .reviewers__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.58;
-  letter-spacing: 0.04em;
+  @include font(500, 12px, 2.58, 0.04em);
+
   color: var(--text-color-light-backgroud);
 
   @include tablet {
@@ -123,9 +116,7 @@
 
   margin-top: 16px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.86;
+  @include font(500, 14px, 1.86, null);
 
   text-align: center;
 
@@ -163,6 +154,10 @@
   margin: 18px;
   width: 12px;
   height: 12px;
+
+  transition-duration: background-image;
+  transition-property: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .swiper-pagination-bullet-active {
@@ -173,4 +168,8 @@
   background-repeat: no-repeat;
   height: 11.84px;
   width: 12.5px;
+
+  &:focus {
+    outline: 1px solid var(--accept-color);
+  }
 }
