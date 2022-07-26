@@ -1,7 +1,7 @@
 <header class="hero-header">
   <div class="container hero-header__slider">
     <div class="hero-header-main-nav">
-      <a class="hero-header-logo" href="#">
+      <a class="hero-header-logo" href="./index.html">
         <svg class="hero-header-logo__icon">
           <use
             href="./images/hero-header/iconlib.svg#icon-hero-header-logo"
@@ -11,19 +11,36 @@
       <nav class="hero-header-site-nav">
         <ul class="hero-header-site-nav__list">
           <li class="hero-header-site-nav__item">
-            <a class="hero-header-site-nav__link" href="#">Home</a>
+            <a class="hero-header-site-nav__link" href="./index.html"> Home</a>
           </li>
           <li class="hero-header-site-nav__item">
-            <a class="hero-header-site-nav__link" href="#">About us</a>
+            <a
+              class="hero-header-site-nav__link"
+              href="#advantages"
+              target="_self"
+              >About us</a
+            >
           </li>
           <li class="hero-header-site-nav__item">
-            <a class="hero-header-site-nav__link" href="#">How it’s made?</a>
+            <a class="hero-header-site-nav__link" href="#about" target="_self"
+              >How it’s made?</a
+            >
           </li>
           <li class="hero-header-site-nav__item">
-            <a class="hero-header-site-nav__link" href="#">Our products</a>
+            <a
+              class="hero-header-site-nav__link"
+              href="#products"
+              target="_self"
+              >Our products</a
+            >
           </li>
           <li class="hero-header-site-nav__item">
-            <a class="hero-header-site-nav__link" href="#">Contact</a>
+            <a
+              class="hero-header-site-nav__link"
+              href="#contacts"
+              target="_self"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -40,7 +57,7 @@
           </button>
         </li>
         <li class="hero-header-button__item">
-          <button class="hero-header__buy__button">
+          <button class="btn btn__lite btn__header-wide-slime">
             Buy now
             <svg class="hero-header__buy__button__icon">
               <use
@@ -59,40 +76,66 @@
           class="hero-header-mobile-menu__button__close"
           data-menu-close
         >
-          <svg width="14" height="14">
+          <svg
+            class="hero-header-mobile-menu__button__close__icon"
+            width="14"
+            height="14"
+          >
             <use
               href="./images/hero-header/iconlib.svg#icon-burger-close"
             ></use>
           </svg>
         </button>
 
-        <button class="hero-header-mobile__buy__button">
+        <button
+          class="btn btn__lite btn__header-wide-slime btn__header-mobile-menu"
+        >
           Buy now
-          <svg width="4" height="8">
-            <use href="#"></use>
+          <svg class="hero-header__buy__button__icon" width="4" height="8">
+            <use
+              href="./images/hero-header/iconlib.svg#icon-buy-now-button-icon"
+            ></use>
           </svg>
         </button>
 
         <nav class="hero-header-mobile-site-nav">
           <ul class="hero-header-mobile-site-nav__list">
             <li class="hero-header-mobile-site-nav__item">
-              <a class="hero-header-mobile-site-nav__link" href="#">Home</a>
+              <a class="hero-header-mobile-site-nav__link" href="./index.html"
+                >Home</a
+              >
             </li>
             <li class="hero-header-mobile-site-nav__item">
-              <a class="hero-header-mobile-site-nav__link" href="#">About us</a>
+              <a
+                class="hero-header-mobile-site-nav__link"
+                href="#advantages"
+                target="_self"
+                >About us</a
+              >
             </li>
             <li class="hero-header-mobile-site-nav__item">
-              <a class="hero-header-mobile-site-nav__link" href="#"
+              <a
+                class="hero-header-mobile-site-nav__link"
+                href="#about"
+                target="_self"
                 >How it’s made?</a
               >
             </li>
             <li class="hero-header-mobile-site-nav__item">
-              <a class="hero-header-mobile-site-nav__link" href="#"
+              <a
+                class="hero-header-mobile-site-nav__link"
+                href="#products"
+                target="_self"
                 >Our products</a
               >
             </li>
             <li class="hero-header-mobile-site-nav__item">
-              <a class="hero-header-mobile-site-nav__link" href="#">Contact</a>
+              <a
+                class="hero-header-mobile-site-nav__link"
+                href="#contacts"
+                target="_self"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -107,12 +150,24 @@
         </h1>
         <ul class="hero-button__list">
           <li class="hero-button__item">
-            <button class="hero-button" type="button">Products</button>
+            <a
+              href="#products"
+              target="_self"
+              class="hero-button"
+              type="button"
+            >
+              Products
+            </a>
           </li>
           <li class="hero-button__item">
-            <button class="hero-button--red" type="button">
+            <a
+              href="#about"
+              target="_self"
+              class="hero-button--red"
+              type="button"
+            >
               How it’s made?
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -130,5 +185,21 @@
         </ul>
       </div>
     </div>
+    <div class="hero-header__spoiler">
+      <p class="hero-header__spoiler__text" data-text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <button
+        class="hero-header__spoiler__button"
+        data-text-button
+        type="button"
+      >
+        <svg class="hero-header__spoiler__icon">
+          <use href="./images/hero-header/iconlib.svg#icon-arrow-button"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
+<script src="./js/spoiler-open.js"></script>
