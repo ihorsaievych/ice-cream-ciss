@@ -34,30 +34,16 @@
   }
 }
 
-.gallery__container--mb {
-  margin-bottom: 25px;
-
-  @include mobile {
-    margin-bottom: 35px;
-  }
-  @include tablet {
-    margin-bottom: 60px;
-  }
-  @include desktop {
-    margin-bottom: 90px;
-  }
-}
-
 .gallery__container--mt {
-  margin-top: 25px;
+  margin-top: 10px;
   @include mobile {
-    margin-top: 35px;
+    margin-top: 20px;
   }
   @include tablet {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   @include desktop {
-    margin-top: 90px;
+    margin-top: 50px;
   }
 }
 
@@ -100,7 +86,7 @@
   }
 }
 
-.gallery__pict:hover {
+picture.big {
   width: 80px;
   box-shadow: 2px 2px 3px rgba(212, 20, 67, 0.12),
     2px 2px 1px rgba(212, 20, 67, 0.14), 2px 3px 2px rgba(212, 20, 67, 0.2);
