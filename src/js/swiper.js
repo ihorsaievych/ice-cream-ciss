@@ -24,4 +24,10 @@ const swiper = new Swiper('.swiper', {
   },
 
   initialSlide: 2,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
 });
