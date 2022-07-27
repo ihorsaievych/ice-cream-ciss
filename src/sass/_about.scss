@@ -3,17 +3,21 @@
     background-image: url(../images/about/mob/about-bg-m1.png);
     background-repeat: no-repeat;    
     background-size: contain;
-    background-position: center 555px;
+    background-position: center 580px;
     padding-top: 60px;
     padding-bottom: 40px;
 
     @include retina {
         background-image: url(../images/about/mob/about-bg-m2.png);
     }
+
+    @include mobile {
+        background-position: center 510px;
+    }
         
     @include tablet {
         padding-bottom: 60px;
-        background-image: none
+        background-image: none;
     }
 
     @include desktop {
@@ -103,16 +107,19 @@
 }
 
 .about-caw {
+    margin-bottom: 40px;
     @include tablet {
         height: 335px;
         width: auto;
         margin-right: 32px;
+        margin-bottom: 0px;
     }
     
     @include desktop {
         height: 501px;
         width: auto;
         margin-right: 99px;
+        margin-bottom: 0px;
     }
 }
 
@@ -226,3 +233,167 @@
     width:9px;
 }
 
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(193, 67, 117, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;   
+    transition: all 0.8s ease 0s;
+}
+
+.popup__area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: #ffffff;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+.b {
+    color: #D41443;
+}
+
+// .popup__icon-btn {
+//     color: #D41443;
+// }
+
+.popup__maintitle {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    // line-height: 21px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #d12dce;
+    margin-bottom: 15px;
+
+    @include mobile {
+        font-size: 22px;
+        line-height: 1.16;
+        // line-height: 30px;
+        margin-bottom: 16px;
+    }
+
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @include desktop {
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+    }
+}
+
+
+.popup__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #cf3242;
+}
+
+.popup__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    /* or 19px */
+    color: #8808a8;
+    
+
+    @include mobile {}
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.76;
+        /* or 25px */
+        letter-spacing: 0.04em;
+        
+    }
+
+    @include desktop {
+        line-height: 1.94;
+        /* or 27px */
+        
+    }
+}
+
+.bopup__price {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    /* or 19px */
+    color: hsl(216, 60%, 51%);
+    @include mobile {}
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.76;
+        /* or 25px */
+        letter-spacing: 0.04em;
+
+    }
+
+    @include desktop {
+        line-height: 1.94;
+        /* or 27px */
+
+    }
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 60px;  
+    text-align: end;
+    color: red;  
+
+}
