@@ -108,6 +108,9 @@
 
 .about-caw {
     margin-bottom: 40px;
+    min-height: 279px;
+    min-height: 280px;
+
     @include tablet {
         height: 335px;
         width: auto;
