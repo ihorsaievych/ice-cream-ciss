@@ -1,35 +1,37 @@
 .section-gallery {
-  background-image: linear-gradient(
-    to bottom,
-    var(--light-coloured-backgroud) 30%,
-    var(--text-color-dark-backgroud) 30%
-  );
   padding-top: 5px;
   padding-bottom: 5px;
-
-  @include desktop {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-coloured-backgroud) 31%,
+    var(--text-color-dark-backgroud) 31%
+  );
+  @include tablet {
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-coloured-backgroud) 28%,
+      var(--text-color-dark-backgroud) 28%
+    );
   }
 }
 
 .gallery {
-  height: 140px;
+  height: 185px;
   display: flex;
   gap: 3px;
   justify-content: center;
   align-items: center;
 
   @include mobile {
-    height: 210px;
+    height: 255px;
     gap: 4px;
   }
   @include tablet {
-    height: 365px;
+    height: 375px;
     gap: 6px;
   }
   @include desktop {
-    height: 530px;
+    height: 570px;
     gap: 8px;
   }
 }
@@ -40,7 +42,7 @@
     margin-top: 20px;
   }
   @include tablet {
-    margin-top: 30px;
+    margin-top: 35px;
   }
   @include desktop {
     margin-top: 50px;
