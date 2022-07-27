@@ -1,11 +1,33 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    type: 'bullets',
+
+    clickable: true,
+
+    dynamicBullets: true,
   },
+
+  simulateTouch: true,
+  grabCursor: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
+  mousewheel: {
+    sensitivity: 1,
+  },
+
+  initialSlide: 2,
+
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
+  speed: 800,
 });

@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Icecream made with passion" />
+    <meta name="author" content="Come in - suddenly someday" />
     <title>Icecream</title>
-    <base target="_blank">
+    <link rel="shortcut icon" href="./images/wolf.svg" type="image/svg+xml" />
+    <script
+      async
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script type="module" src="./index.js"></script> -->
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
@@ -42,8 +54,10 @@
     <!-- Footer - @Егор -->
     <include src="./partials/footer.html"></include>
 
-    <script src="./js/mobile-menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./js/spoiler-open.js" async></script>
+    <script src="./js/gallery.js" async></script>
+    <script src="./js/mobile-menu.js" async></script>
+    <script src="./js/swiper.js" async></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async> AOS.init();</script> -->
   </body>
 </html>

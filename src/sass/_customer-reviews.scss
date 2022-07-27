@@ -1,18 +1,24 @@
 .reviewers {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   @include tablet {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+
+    @include desktop {
+      padding-bottom: 60px;
+    }
     & .container {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 74px;
+      padding-right: 74px;
     }
   }
-}
-.container {
-}
 
-.reviewers__wrap {
+  @include desktop {
+    & .container {
+      padding-left: 116px;
+      padding-right: 116px;
+    }
+  }
 }
 
 .reviewers__thumb {
@@ -22,7 +28,8 @@
 }
 .reviewers__info {
   margin-top: 32px;
-  // min-height: 308px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: #fafafa;
   background-image: url(../images/“.svg);
@@ -31,46 +38,52 @@
   background-position: 53px 30px;
 
   text-align: center;
+
   @media screen and (max-width: 767px) {
     padding: 43px 50px 17px;
   }
-
   @include tablet {
+    width: 620px;
     padding-top: 37px;
     padding-bottom: 44px;
+
+    background-position: 15px 20px;
+  }
+  @include desktop {
+    width: 100%;
+    padding-left: 73px;
+    padding-right: 73px;
+
+    padding-top: 47px;
+    padding-bottom: 39px;
+
+    background-position: 72px 32px;
   }
 }
 .reviewers__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.58;
-  letter-spacing: 0.04em;
+  @include font(500, 12px, 2.58, 0.04em);
+
   color: var(--text-color-light-backgroud);
 
   @include tablet {
-    font-size: 14;
+    font-size: 14px;
+    line-height: 2.16;
   }
 
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: -15;
-  //   left: -45;
-
-  //   display: block;
-  //   width: 54px;
-  //   height: 40px;
-  //   background-image: url(../images/“.svg);
-  // }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 .reviewers__text--area {
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-image: repeating-linear-gradient(
     to bottom,
-    transparent 0 29px,
-    #e1e1e1 31px
+    transparent 0 28px,
+    #e1e1e1 30px
   );
 
   @media screen and (max-width: 767px) {
@@ -78,25 +91,20 @@
   }
   @include tablet {
     width: 608px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include desktop {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 
     background-image: repeating-linear-gradient(
       to bottom,
-      transparent 0 33px,
-      #e1e1e1 35px
+      transparent 0 27px,
+      #e1e1e1 30px
     );
-  }
-}
-.reviewers__text--wrap {
-  margin: 0 auto;
-  width: 157px;
-
-  background-image: url(../images/“.svg);
-
-  background-repeat: no-repeat;
-  background-position: top left;
-
-  @include tablet {
-    width: 514px;
   }
 }
 
@@ -112,13 +120,18 @@
 
   margin-top: 16px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.86;
+  @include font(500, 14px, 1.86, null);
 
   text-align: center;
 
   color: var(--text-color-light-backgroud);
+
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 20px;
+  }
 }
 .reviewers__dots {
   display: block;
@@ -128,30 +141,47 @@
 }
 
 .swiper {
-  min-width: 280px;
-  // height: 487px;
-  min-height: 550px;
-}
-// .swiper-pagination {
-//   padding-top: 70px;
-// }
+  padding-bottom: 35px;
 
-// .swiper-pagination-bullet {
-//   width: 20px;
-//   height: 20px;
-//   text-align: center;
-//   line-height: 20px;
-//   font-size: 12px;
-//   color: #000;
-//   opacity: 1;
-//   background: rgba(0, 0, 0, 0.2);
-// }
-// .swiper-pagination-bullet-active {
-//   color: #fff;
-//   background: #007aff;
-// }
+  @include tablet {
+    padding-bottom: 55px;
+  }
+}
 
 .swiper-pagination-bullet {
-  width: auto;
-  background: transparent;
+  width: 12px;
+  height: 12px;
+
+  &:focus {
+    background-color: var(--accept-color);
+    opacity: 1;
+    outline: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 0;
+  background-color: transparent;
+
+  background-image: url(../images/Frame-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 11.84px;
+  width: 12.4px;
+
+  transition: 300ms transform, 300ms left;
+
+  &:focus {
+    background-color: transparent;
+  }
+
+  @include tablet {
+    width: 12px;
+    height: 9.82px;
+  }
+
+  @include desktop {
+    width: 12px;
+    height: 10.84px;
+  }
 }

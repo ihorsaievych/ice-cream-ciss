@@ -3,10 +3,14 @@ footer {
 }
 
 .footer-up {
-   padding: 80px 0 65px;
+   padding: 40px 0 0;
    
    @include tablet {
       padding: 40px 0;
+   }
+
+   @include desktop {
+      padding: 60px 0;
    }
 }
 
@@ -46,6 +50,14 @@ footer {
       list-style: 0.04em;
       margin-bottom: 12px;
    }
+
+   @include desktop {
+      width: 472px;
+      font-size: 30px;
+      line-height: 34px;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+   }
 }
 
 .footer-title-large {
@@ -61,10 +73,20 @@ footer {
    color: var(--accept-color);
    
    @include tablet {
+      margin-bottom: 40px;
       width: 340px;
       font-size: 48px;
       line-height: 55px;
       letter-spacing: 0.06em;
+   }
+
+   @include desktop {
+      width: 474px;
+      font-size: 58px;
+      line-height: 66px;
+      letter-spacing: 0.06em;
+      margin-bottom: 0;
+      display: inline;
    }
 }
 
@@ -74,6 +96,16 @@ footer {
 
    @include tablet {
       
+   }
+}
+
+.footer-column-dawn {
+   @include tablet {
+      padding-top: 70px;
+   }
+
+   @include desktop {
+      padding-top: 10px;
    }
 }
 
@@ -95,8 +127,11 @@ footer {
    
    background-color: var(--darker-backgroud); 
    
-   &:hover {
+   &:hover,
+   &:focus {
       background-color: var(--accept-color);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 }
 
@@ -123,8 +158,14 @@ footer {
    }
 }
 
-.text-color {
+.namber {
    color:var(--accept-color);
+      &:hover,
+      &:focus {
+      color: var(--text-color-description);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
 
    @include tablet {
       font-weight: 500;
@@ -144,9 +185,13 @@ footer {
    font-size: 14px;
    line-height: 1.5;
    max-width: 280px;
-   padding: 16px 20px 3px;
+   padding: 16px 70px 3px;
 
    color:var(--text-color-description);
+   @include mobile {
+      margin-left: auto;
+      margin-right: auto;
+   }
    
    @include tablet{
       display: inline-block;
