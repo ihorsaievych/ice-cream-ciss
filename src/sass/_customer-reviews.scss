@@ -1,8 +1,12 @@
 .reviewers {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   @include tablet {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+
+    @include desktop {
+      padding-bottom: 30px;
+    }
     & .container {
       padding-left: 74px;
       padding-right: 74px;
@@ -144,32 +148,40 @@
   }
 }
 
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-}
-
 .swiper-pagination-bullet {
-  margin: 18px;
   width: 12px;
   height: 12px;
 
-  transition-duration: background-image;
-  transition-property: 250ms;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:focus {
+    background-color: var(--accept-color);
+    opacity: 1;
+    outline: none;
+  }
 }
 
 .swiper-pagination-bullet-active {
   border-radius: 0;
   background-color: transparent;
+
   background-image: url(../images/Frame-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 11.84px;
-  width: 12.5px;
+  width: 12.4px;
+
+  transition: 300ms transform, 300ms left;
 
   &:focus {
-    outline: 1px solid var(--accept-color);
+    background-color: transparent;
+  }
+
+  @include tablet {
+    width: 12px;
+    height: 9.82px;
+  }
+
+  @include desktop {
+    width: 12px;
+    height: 10.84px;
   }
 }

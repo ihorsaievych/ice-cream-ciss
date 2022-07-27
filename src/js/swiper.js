@@ -6,9 +6,28 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
 
     clickable: true,
+
+    dynamicBullets: true,
   },
 
   simulateTouch: true,
   grabCursor: true,
-  spaceBetween: 10,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
+  mousewheel: {
+    sensitivity: 1,
+  },
+
+  initialSlide: 2,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
 });
