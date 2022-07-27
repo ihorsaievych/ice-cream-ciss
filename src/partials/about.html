@@ -2,27 +2,56 @@
 <section class="about" id="about">
     <div class="container"> 
 
-        <p class="about-over-text">tradition and love</h3>
+        <p class="about-over-text" data-aos="fade-right">tradition and love</h3>
 
-        <h2 class="about-title">how it’s made?</h2>
+        <h2 class="about-title" data-aos="fade-left">how it’s made?</h2>
 
         <div class="about-content">
-            <img class="about-caw" src="./images/about/mob/about-m1.png" alt="a jug of milk and a cow">
+            <picture>
+                <source 
+                    srcset="
+                        ./images/about/desk/about-d1.png 1x,
+                        ./images/about/desk/about-d1.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                >
+
+                <source 
+                    srcset="
+                        ./images/about/tab/about-t1.png 1x,
+                        ./images/about/tab/about-t1.png 2x
+                    "
+                    media="(min-width: 768px)"
+                >
+
+                <source 
+                    srcset="
+                        ./images/about/mob/about-m1.png 1x,
+                        ./images/about/mob/about-m1.png 2x
+                    "
+                    media="(min-width: 320px)"
+                >
+            </picture>
+
+            <img class="about-caw" data-aos="zoom-in"              
+                src="./images/about/desk/about-d1.png" 
+                alt="a jug of milk and a cow"
+            >
 
             <div class="about-content-inform">
-                <p class="main-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
+                <p class="main-text" data-aos="flip-left">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
                     egestas
                     eros.
                     Maecenas eleifend erat at justo fringilla.
                 </p>
                 
-                <p class="base-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+                <p class="base-text" data-aos="flip-right">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
                     imperdiet placerat.
                     Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, <br class="br">
                     Aliquam erat volutpat. Aenean accumsan.
                 </p>
                 
-                <button type="button" class="about-btn" data-modal-open>Read more
+                <button type="button" class="about-btn" data-modal-open data-aos="flip-up">Read more
                     <svg class="btn-icon">
                         <use class="" href="./images/about/about-icon/about-icons-btn.svg#icon-btn-about-arrow"></use>
                     </svg>

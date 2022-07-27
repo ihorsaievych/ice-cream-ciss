@@ -6,6 +6,10 @@
     background-position: center 555px;
     padding-top: 60px;
     padding-bottom: 40px;
+
+    @include retina {
+        background-image: url(../images/about/mob/about-bg-m2.png);
+    }
         
     @include tablet {
         padding-bottom: 60px;
@@ -13,8 +17,13 @@
     }
 
     @include desktop {
-        background-image: url(../images/about/mob/about-bg-m1.png);
+        background-image: url(../images/about/desk/about-bg-d1.png);
         background-position: bottom;
+        background-size: contain;
+
+        @include retina {
+            background-image: url(../images/about/desk/about-bg-d2.png);
+        }
     }
 }
 
