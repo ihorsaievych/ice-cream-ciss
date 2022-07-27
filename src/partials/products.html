@@ -1,50 +1,91 @@
-<section class="products section" id="products">
-  <div class="container">
-    <p class="products__subtitle">100% natural</p>
-    <h2 class="products__heading">products</h2>
-    <ul class="products__list">
-      <li class="products__item products__item--ice-cream">
-        <h3 class="products__title products__title--ice-cream">ice cream</h3>
-        <p class="products__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <button type="button" class="products__button" aria-label="Ice Cream: Read more">
-          <svg class="button__icon" width="40" height="40">
-            <use
-              href="/src/images/products/arrow-button.svg#icon-arrow-button"
-            ></use>
-          </svg>
-        </button>
-      </li>
-      <li class="products__item products__item--ice-coffee">
-        <h3 class="products__title products__title--ice-coffee">ice coffee</h3>
-        <p class="products__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <button type="button" class="products__button" aria-label="Ice Coffee: Read more">
-          <svg class="button__icon" width="40" height="40">
-            <use
-              href="/src/images/products/arrow-button.svg#icon-arrow-button"
-            ></use>
-          </svg>
-        </button>
-      </li>
-      <li class="products__item products__item--milkshakes">
-        <h3 class="products__title products__title--milkshakes">milkshakes</h3>
-        <p class="products__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <button type="button" class="products__button" aria-label="Milkshakes: Read more">
-          <svg class="button__icon" width="40" height="40">
-            <use
-              href="/src/images/products/arrow-button.svg#icon-arrow-button"
-            ></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
-  </div>
-</section>
+<section class="products section" id="products"> 
+  <div class="container"> 
+    <p class="products__subtitle">100% natural</p> 
+    <h2 class="products__heading">products</h2> 
+    <ul class="products__list"> 
+      <li class="products__item products__item--ice-cream"> 
+        <h3 class="products__title products__title--ice-cream">ice cream</h3> 
+        <p class="products__text"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
+        </p> 
+        <button type="button" class="products__btn" data-modal-ice-cream-open> 
+          <svg class="btn__icon" width="40" height="40"> 
+            <use 
+              href="/src/images/products/arrow-button.svg#icon-arrow-button" 
+            ></use> 
+          </svg> 
+        </button> 
+      </li> 
+      <li class="products__item products__item--ice-coffee"> 
+        <h3 class="products__title products__title--ice-coffee">ice coffee</h3> 
+        <p class="products__text"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
+        </p> 
+        <button type="button" class="products__btn" data-modal-ice-coffee-open> 
+          <svg class="btn__icon" width="40" height="40"> 
+            <use 
+              href="/src/images/products/arrow-button.svg#icon-arrow-button" 
+            ></use> 
+          </svg> 
+        </button> 
+      </li> 
+      <li class="products__item products__item--milkshakes"> 
+        <h3 class="products__title products__title--milkshakes">milkshakes</h3> 
+        <p class="products__text"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
+        </p> 
+        <button type="button" class="products__btn" data-modal-milkshakes-open> 
+          <svg class="btn__icon" width="40" height="40"> 
+            <use 
+              href="/src/images/products/arrow-button.svg#icon-arrow-button" 
+            ></use> 
+          </svg> 
+        </button> 
+      </li> 
+    </ul> 
+  </div> 
+</section> 
+ 
+
+<!-- modal --> 
+
+<!-- ice-cream -->
+<div class="backdrop is-hidden" data-modal-ice-cream> 
+  <div class="modal modal--ice-cream"> 
+      <button class="modal-close-btn modal-close-btn--ice-cream" type="button" data-modal-ice-cream-close> 
+          <svg class="modal-close-btn__icon" width="14" height="14"> 
+              <use href="/src/images/iconlib.svg#icon-burger-close"></use> 
+          </svg> 
+      </button>
+      <h2 class="modal__title modal__title--ice-cream">Ice-cream</h2>
+      <p class="modal__text">Ice cream is a mixture of milk, cream, sugar, and sometimes other ingredients that has been frozen into a soft, creamy delight using special techniques. Ice cream has been a popular treat for hundreds of years but has only become commonplace since the widespread use of refrigeration.</p> 
+  </div> 
+</div> 
+<!-- ice-coffee -->
+<div class="backdrop is-hidden" data-modal-ice-coffee> 
+  <div class="modal modal--ice-coffee"> 
+      <button class="modal-close-btn modal-close-btn--ice-coffee" type="button" data-modal-ice-coffee-close> 
+          <svg class="modal-close-btn__icon" width="14" height="14"> 
+              <use href="/src/images/iconlib.svg#icon-burger-close"></use> 
+          </svg> 
+      </button>
+      <h2 class="modal__title modal__title--ice-coffee">Ice-coffee</h2>
+      <p class="modal__text">An ice-coffee is a cold version of your favourite coffee, but it’s not simply a coffee that has been left to cool. Like a regular coffee, it’s usually a combination of hot espresso and milk. However, ice is added too.</p> 
+  </div> 
+</div> <!-- ice-milkshakes -->
+<div class="backdrop is-hidden" data-modal-milkshakes> 
+  <div class="modal modal--milkshakes"> 
+      <button class="modal-close-btn modal-close-btn--milkshakes" type="button" data-modal-milkshakes-close> 
+          <svg class="modal-close-btn__icon" width="14" height="14"> 
+              <use href="/src/images/iconlib.svg#icon-burger-close"></use> 
+          </svg> 
+      </button>
+      <h2 class="modal__title modal__title--milkshakes">Milkshakes</h2>
+      <p class="modal__text">A milkshake (sometimes simply called a shake) is a sweet beverage made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture. It may also be made using a base made from non-dairy products, including plant milks such as almond milk, coconut milk, or soy milk.</p> 
+  </div> 
+</div> 
+<script src="./js/modal_products.js"></script>
+
