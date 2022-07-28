@@ -17,7 +17,17 @@
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
-
+    animation-name: show_circle;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    @keyframes show_circle {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
     @media screen and(min-width: 768px) {
       width: 335px;
       height: 333px;
@@ -50,6 +60,19 @@
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
+    animation-name: show_ice-cream;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    @keyframes show_ice-cream {
+      0% {
+        opacity: 0;
+        transform: translatey(+70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translatey(0);
+      }
+    }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -103,6 +126,7 @@
     right: 584px;
     margin-left: auto;
     margin-right: auto;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -141,6 +165,10 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
+    animation-name: show_tasty;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
