@@ -17,6 +17,17 @@
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
+    animation-name: show_circle;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    @keyframes show_circle {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
     @media screen and(min-width: 768px) {
       width: 335px;
       height: 333px;
@@ -49,6 +60,19 @@
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
+    animation-name: show_ice-cream;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    @keyframes show_ice-cream {
+      0% {
+        opacity: 0;
+        transform: translatey(+70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translatey(0);
+      }
+    }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -102,6 +126,7 @@
     right: 584px;
     margin-left: auto;
     margin-right: auto;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -140,6 +165,10 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
+    animation-name: show_tasty;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -166,13 +195,45 @@
   display: flex;
   align-items: center;
   padding-top: 8px;
-
   @media screen and (min-width: 768px) {
     padding-top: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 40px;
+  }
+}
+
+.hero-header-fixed {
+  display: none;
+}
+
+.hero-header-fixed-main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_fixed {
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  animation-name: show_header;
+  background-color: rgba(255, 165, 186, 0.8);
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes show_header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
   }
 }
 
@@ -269,8 +330,8 @@
 }
 
 .hero-header-mobile-menu {
+  z-index: 15;
   position: fixed;
-  z-index: 10;
   top: 0;
   right: 0;
   transform: translateX(+101%);
@@ -278,7 +339,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &.is-open {
     transform: translateX(0);
-    z-index: 10;
+    z-index: 100;
     @media screen and (max-width: 767px) {
       width: 250px;
     }
@@ -624,11 +685,24 @@
   margin-right: auto;
   z-index: 5;
   &--easter {
-    display: none;
-    width: 500px;
+    opacity: 0;
+    position: absolute;
+    margin-top: 60px;
+    transform: translateY(100%);
+    width: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 8;
+    @media screen and(max-width:1199px) {
+      margin-top: 30px;
+    }
     &.is-open {
-      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      margin-top: 60px;
+      @media screen and(max-width:1199px) {
+        margin-top: 30px;
+      }
     }
   }
   @media screen and(min-width:1200px) {
