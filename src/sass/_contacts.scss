@@ -5,8 +5,8 @@
   background: linear-gradient(
     to bottom,
     #ffffff 0,
-    #ffffff 302px,
-    var(--light-coloured-backgroud) 302px,
+    #ffffff 332px,
+    var(--light-coloured-backgroud) 332px,
     var(--light-coloured-backgroud) 100%
   );
 
@@ -15,8 +15,8 @@
     background: linear-gradient(
       to bottom,
       #ffffff 0,
-      #ffffff 298px,
-      var(--light-coloured-backgroud) 298px,
+      #ffffff 338px,
+      var(--light-coloured-backgroud) 338px,
       var(--light-coloured-backgroud) 100%
     );
   }
@@ -232,6 +232,11 @@
 
 .contacts__button-item .btn {
   width: 162px;
+}
+
+.contacts__button-item .btn__dark:hover,
+.contacts__button-item .btn__dark:focus {
+  background-color: #8a1c2e;
 }
 
 .contacts__locations-icon-red {
