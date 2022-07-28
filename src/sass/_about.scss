@@ -96,8 +96,14 @@
   display: flex;
   flex-direction: column;
 
-  @include mobile {
-  }
+
+    @include mobile {
+        align-items: center;
+    }
+    
+    @include tablet {
+        flex-direction: row;
+    }
 
   @include tablet {
     flex-direction: row;
