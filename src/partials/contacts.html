@@ -98,7 +98,7 @@
 
     <ul class="contacts__buttons list">
       <li class="contacts__button-item">
-        <button type="button" class="btn btn__dark">
+        <button type="button" class="btn btn__dark" data-modal-shop-loc-open>
           Our Locations<svg
             class="contacts__locations-icon"
             width="8"
@@ -109,7 +109,7 @@
         </button>
       </li>
       <li class="contacts__button-item">
-        <button type="button" class="btn btn__lite">
+        <button type="button" class="btn btn__lite" data-modal-franchise-open>
           Franchise<svg
             class="contacts__locations-icon-red"
             width="8"
@@ -122,3 +122,17 @@
     </ul>
   </div>
 </section>
+
+
+<!-- modal -->
+<div class="backdrop is-hidden" data-modal-shop-loc data-modal-franchise>
+  <div class="modal modal__contacts">
+    <button class="modal-close-btn modal-close-btn--ice-coffee" type="button" data-modal-shop-loc-close> 
+      <svg class="modal-close-btn__icon" width="14" height="14"> 
+        <use href="/src/images/iconlib.svg#icon-burger-close"></use> 
+      </svg> 
+    </div>
+    
+</div>
+
+<script src="./js/modal_contacts.js"></script>

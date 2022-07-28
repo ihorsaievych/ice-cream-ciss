@@ -5,8 +5,8 @@
   background: linear-gradient(
     to bottom,
     #ffffff 0,
-    #ffffff 302px,
-    var(--light-coloured-backgroud) 302px,
+    #ffffff 332px,
+    var(--light-coloured-backgroud) 332px,
     var(--light-coloured-backgroud) 100%
   );
 
@@ -15,8 +15,8 @@
     background: linear-gradient(
       to bottom,
       #ffffff 0,
-      #ffffff 298px,
-      var(--light-coloured-backgroud) 298px,
+      #ffffff 338px,
+      var(--light-coloured-backgroud) 338px,
       var(--light-coloured-backgroud) 100%
     );
   }
@@ -234,10 +234,19 @@
   width: 162px;
 }
 
+.contacts__button-item .btn__dark:hover,
+.contacts__button-item .btn__dark:focus {
+  background-color: #8a1c2e;
+}
+
 .contacts__locations-icon-red {
   margin-left: 12px;
 }
 
 .contacts__locations-icon {
   margin-left: 8px;
+}
+
+.modal__contacts {
+  height: 60%;
 }
